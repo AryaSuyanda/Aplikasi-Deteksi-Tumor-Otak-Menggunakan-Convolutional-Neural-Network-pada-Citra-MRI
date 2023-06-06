@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1319</width>
+    <height>883</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>20</y>
+      <width>341</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Tumor Detector</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>340</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cari Gambar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="predict_image">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>280</y>
+      <width>431</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="predict_button">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>390</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Predict</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_result">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>670</y>
+      <width>581</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="image_original">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>290</y>
+      <width>431</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>250</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>INPUT</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>240</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Tumor Area</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>70</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Kelompok C4</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>130</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Muhammad Tegar Akmal</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>130</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Rifqi Lukmansyah</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>130</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Yoga Ramadhan</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1319</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menupreprocessing_for_predict_step">
+    <property name="title">
+     <string>preprocessing for predict step</string>
+    </property>
+    <addaction name="actionTransform_to_grayscale"/>
+    <addaction name="actionapply_gaussian"/>
+    <addaction name="actionapply_thresholding"/>
+    <addaction name="actionapply_eroded"/>
+    <addaction name="actionapply_dilated"/>
+    <addaction name="actionfind_contours"/>
+   </widget>
+   <widget class="QMenu" name="menuprocess_to_ofind_tumoor_area">
+    <property name="title">
+     <string>process to find tumor area</string>
+    </property>
+    <addaction name="actionTransform_to_grayscale_2"/>
+    <addaction name="actionApply_tresholding"/>
+    <addaction name="actionApply_morphology"/>
+    <addaction name="actionApply_dilate"/>
+    <addaction name="actiondinf_foreground_area"/>
+    <addaction name="actionfind_uknown_region"/>
+    <addaction name="actionmark_the_region_of_unknown_with_zero"/>
+   </widget>
+   <addaction name="menupreprocessing_for_predict_step"/>
+   <addaction name="menuprocess_to_ofind_tumoor_area"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionTransform_to_grayscale">
+   <property name="text">
+    <string>Transform to grayscale</string>
+   </property>
+  </action>
+  <action name="actionapply_gaussian">
+   <property name="text">
+    <string>Apply gaussian</string>
+   </property>
+  </action>
+  <action name="actionapply_thresholding">
+   <property name="text">
+    <string>Apply thresholding</string>
+   </property>
+  </action>
+  <action name="actionapply_dilated">
+   <property name="text">
+    <string>Apply Dilasi</string>
+   </property>
+  </action>
+  <action name="actionfind_contours">
+   <property name="text">
+    <string>Find Contour + resize</string>
+   </property>
+  </action>
+  <action name="actionapply_eroded">
+   <property name="text">
+    <string>Apply Erosian</string>
+   </property>
+  </action>
+  <action name="actionTransform_to_grayscale_2">
+   <property name="text">
+    <string>Transform to grayscale</string>
+   </property>
+  </action>
+  <action name="actionApply_tresholding">
+   <property name="text">
+    <string>Apply tresholding</string>
+   </property>
+  </action>
+  <action name="apply_morphoology">
+   <property name="text">
+    <string>Apply morphology</string>
+   </property>
+  </action>
+  <action name="actionremove_noise">
+   <property name="text">
+    <string>remove noise</string>
+   </property>
+  </action>
+  <action name="actionApply_morphology">
+   <property name="text">
+    <string>Apply morphology</string>
+   </property>
+  </action>
+  <action name="actionApply_dilate">
+   <property name="text">
+    <string>Apply dilate</string>
+   </property>
+  </action>
+  <action name="actiondinf_foreground_area">
+   <property name="text">
+    <string>find foreground area</string>
+   </property>
+  </action>
+  <action name="actionfind_uknown_region">
+   <property name="text">
+    <string>find uknown region</string>
+   </property>
+  </action>
+  <action name="actionmark_the_region_of_unknown_with_zero">
+   <property name="text">
+    <string>mark the region of unknown with zero</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
